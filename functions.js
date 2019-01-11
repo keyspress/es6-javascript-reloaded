@@ -34,7 +34,18 @@
 
 // console.log(sum(...numbers));
 
-let a = [2, 3, 4];
-let b = [1, ...a, 5];
+// let a = [2, 3, 4];
+// let b = [1, ...a, 5];
 
-console.log(b);
+// console.log(b);
+
+let foo = (a, b) => {
+  let counter = 0;
+
+  for (let i = 0; i < b; i++) {
+    counter += a;
+  }
+  return counter;
+};
+
+console.log(foo(1, 5));
