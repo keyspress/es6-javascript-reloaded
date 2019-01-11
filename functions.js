@@ -1,5 +1,15 @@
-function box(height = 50, color = 'green', url = 'google.com') {
-  console.log(height, color, url);
+// function setHeight(value) {
+//   return value * 10;
+// }
+
+// function box(height = setHeight(10), color = 'green', url = 'google.com') {
+//   console.log(height, color, url);
+// }
+
+// box();
+
+function multiply(num = 2, numTwo = num) {
+  return num * numTwo;
 }
 
-box(30, null, 'yahoo.com');
+console.log(multiply(3, 10));
