@@ -39,13 +39,25 @@
 
 // console.log(b);
 
-let foo = (a, b) => {
-  let counter = 0;
+// let foo = (a, b) => {
+//   let counter = 0;
 
-  for (let i = 0; i < b; i++) {
-    counter += a;
+//   for (let i = 0; i < b; i++) {
+//     counter += a;
+//   }
+//   return counter;
+// };
+
+// console.log(foo(1, 5));
+
+var person = {
+  firstname: 'Jim',
+  lastname: 'Jones',
+  getFullName: function() {
+    var name = () =>
+      console.log(console.log(this.firstname + ' ' + this.lastname));
+    return name();
   }
-  return counter;
 };
 
-console.log(foo(1, 5));
+person.getFullName();
