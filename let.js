@@ -11,14 +11,29 @@
 
 // showLength([1, 2, 3]);
 
-var funcs = [];
+// var funcs = [];
 
-for (let i = 0; i < 5; i++) {
-  funcs.push(function() {
-    console.log(i);
-  });
+// for (let i = 0; i < 5; i++) {
+//   funcs.push(function() {
+//     console.log(i);
+//   });
+// }
+
+// funcs[0]();
+// funcs[1]();
+// funcs[4]();
+
+// console.log(foo);
+
+// var foo = 'hello';
+
+// console.group(bar);
+// let bar = 'world';
+
+let foo = 'hello';
+console.log(foo);
+
+{
+  let foo = 'world';
+  console.log(foo);
 }
-
-funcs[0]();
-funcs[1]();
-funcs[4]();
