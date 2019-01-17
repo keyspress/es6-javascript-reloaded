@@ -24,12 +24,23 @@
 //   console.log(`${key} = ${value}`);
 // }
 
-let person = {
-  name: 'Abdi',
-  address: '123 Js Street',
-  occupation: 'JS Dev'
-};
+// let person = {
+//   name: 'Abdi',
+//   address: '123 Js Street',
+//   occupation: 'JS Dev'
+// };
 
-let numbers = [1, 2, 3];
+// let numbers = [1, 2, 3];
 
-console.log(typeof person[Symbol.iterator]);
+// console.log(typeof person[Symbol.iterator]);
+
+let personOne = {};
+let personTwo = {};
+
+let people = new WeakMap();
+
+people.set(personOne, 'Dave');
+people.set(personTwo, 'Alfi');
+
+console.log(people.get(personOne));
+console.log(people.get(personTwo));
