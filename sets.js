@@ -9,4 +9,6 @@ cars.add('Ford');
 cars.add('Mercedes');
 cars.add('Audi');
 
-console.log(cars.size);
+for (let car of cars) {
+  console.log(car);
+}
