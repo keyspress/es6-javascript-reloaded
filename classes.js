@@ -41,8 +41,18 @@ class Car {
   }
 }
 
-let car = new Car({ name: 'Ford', model: 'Galaxy', description: 'Family car' });
+class Audi extends Car {
+  constructor(carSpec) {
+    super(carSpec);
+    this.engine = carSpec.engine;
+  }
+}
 
-console.log(car.description);
+let audi = new Audi({
+  name: 'Audi',
+  model: 'A3',
+  engine: 'A313',
+  description: 'Runs on the blood of the innocent'
+});
 
-car.drive();
+console.log(audi);
