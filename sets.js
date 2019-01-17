@@ -9,6 +9,6 @@ cars.add('Ford');
 cars.add('Mercedes');
 cars.add('Audi');
 
-for (let car of cars) {
-  console.log(car);
-}
+let [a, b, c] = cars;
+
+console.log(a, b, c);
