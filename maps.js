@@ -1,14 +1,25 @@
-let carOne = {
-  make: 'Audi'
-};
+// let carOne = {
+//   make: 'Audi'
+// };
 
-let carTwo = {
-  make: 'Ford'
-};
+// let carTwo = {
+//   make: 'Ford'
+// };
 
-let carAge = new Map();
+// let carAge = new Map();
 
-carAge.set(carOne, 3);
-carAge.set(carTwo, 5);
+// carAge.set(carOne, 3);
+// carAge.set(carTwo, 5);
 
-console.log(carAge);
+// console.log(carAge);
+
+let cars = new Map();
+
+cars.set('CarOne', 'Audi');
+cars.set('CarTwo', 'Ford');
+cars.set('CarThree', 'GM');
+cars.set('CarFour', 'BMW');
+
+for (let [key, value] of cars) {
+  console.log(`${key} = ${value}`);
+}
